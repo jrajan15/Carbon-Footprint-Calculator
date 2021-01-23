@@ -1,6 +1,8 @@
 # Create your views here.
 from django.shortcuts import render
 from django.http import HttpResponse
+import urllib.request
+import json
 
 
 def home(request):
@@ -14,3 +16,13 @@ def calculate(request):
 def about(request):
     context = {}
     return render(request, 'about.html', context)
+
+
+def getResponse(url):
+    operUrl = urllib.request.urlopen(url)
+    if(operUrl.getcode() == 200):
+        data = operUrl.read()
+        jsonData = json.loads(data)
+    else:
+        print("Error receiving data", operUrl.getcode())
+    return jsonData
