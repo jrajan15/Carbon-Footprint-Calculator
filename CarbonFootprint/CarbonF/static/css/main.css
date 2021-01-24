@@ -20,11 +20,20 @@ body {
   color: #c17c74;
   padding: 2px;
   max-width: 100%;
-  margin-left: 40%;
+  margin-left: 60%;
   text-align: center;
 }
 
 .parah-1{
+  padding: 30px;
+  margin-top: 40px;
+  text-align: justify;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddc9b4;
+}
+
+.definition{
   padding: 30px;
   margin-top: 40px;
   text-align: justify;
