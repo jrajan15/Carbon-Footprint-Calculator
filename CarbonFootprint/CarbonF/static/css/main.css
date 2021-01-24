@@ -69,6 +69,64 @@ body {
   float: right;
 }
 
+/* Form */
+.calculator{
+  margin-top: 100px;
+}
+.contact h6{
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  color: rgba(255, 99, 71, 0.74);
+  text-align: center;
+  line-height: 0;
+  margin-top: -2rem;
+}
+form{
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label{
+  font-size: 2rem;
+  color: antiquewhite;
+}
+
+input,
+select{
+  width: 100%;
+  padding: 1rem;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  border: none;
+  outline-color: #051e2f;
+  font-size: 2rem;
+}
+
+input[type="submit"]{
+  margin-top: 10px;
+  width: initial;
+  size: 4rem;
+  font-size: 2rem;
+  align-content: center;
+  background: linear-gradient(to top, #670909, #843111);
+  color: aliceblue;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background 650ms;
+}
+
+input[type="submit"]:hover{
+  background: linear-gradient(to top, #8d0d0d, #b24518);
+}
+/* Form */
+
+/* Login Page */
+
+.border-bottom mb-4{
+  color: azure;
+}
+/* Login Page*/
 @media screen and (max-width: 500px) {
   .header a {
     float: none;

@@ -9,9 +9,14 @@
 <section class="calculator" data-aos="fade-up" data-aos-delay="600">
     <div class="container">
         <form
-            action="http://localhost:8080/requestcarbonfootprint"
-            method="GET">
-            <input type="text" name="origin">
+            action = ""
+            method="POST">
+            {% csrf_token %}
+            <label for="Start">Start:</label>
+            <input type="text" name="origin" value="{{request.form.origin}}">
+            <label for="Destination">Destination:</label>
+            <input type="text" name="destination" value={{request.form.destination}}>
+            <input type="submit">
         </form>
     </div>
 </section>
